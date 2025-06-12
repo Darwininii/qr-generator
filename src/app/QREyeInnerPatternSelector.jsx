@@ -23,7 +23,7 @@ const QREyeInnerPatternSelector = ({ innerEye, setInnerEye, innerEyeColor, setIn
         </button>
       ))}
     </div>
-    <div className="flex items-center gap-2 mt-2">
+    <div className="flex items-center gap-2 mt-2 text-black">
       <span>Color:</span>
       <input
         type="color"

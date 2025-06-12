@@ -99,7 +99,7 @@ const QREyeOuterPatternSelector = ({
 				</button>
 			))}
 		</div>
-		<div className="flex items-center gap-2 mt-2">
+		<div className="flex items-center gap-2 mt-2 text-black">
 			<span>Color:</span>
 			<input
 				type="color"
