@@ -9,14 +9,14 @@ const innerEyePatterns = [
 ];
 
 const QREyeInnerPatternSelector = ({ innerEye, setInnerEye, innerEyeColor, setInnerEyeColor }) => (
-  <div className="p-4 bg-white rounded shadow mb-4">
-    <div className="font-bold mb-2 text-black">Patrón de ojos internos</div>
-    <div className="flex flex-wrap gap-2 mb-2">
+  <div className="p-4 bg-white rounded shadow mb-4 max-w-xs sm:max-w-md w-full mx-auto">
+    <div className="font-bold mb-2 text-black text-center">Patrón de ojos internos</div>
+    <div className="qr-eye-row mb-2">
       {innerEyePatterns.map((p) => (
         <button
           key={p.value}
           type="button"
-          className={`border rounded p-2 ${innerEye === p.value ? "border-blue-500 bg-blue-100" : "border-gray-300 bg-white"}`}
+          className={`border rounded p-2 min-w-[48px] ${innerEye === p.value ? "border-blue-500 bg-blue-100" : "border-gray-300 bg-white"}`}
           onClick={() => setInnerEye(p.value)}
         >
           {p.svg}

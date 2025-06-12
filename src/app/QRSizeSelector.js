@@ -13,7 +13,7 @@ const QRSizeSelector = ({ size, setSize }) => {
       <select
         value={size}
         onChange={(e) => setSize(parseInt(e.target.value))}
-        className="bg-white text-black p-2 rounded"
+        className="bg-white text-black p-2 rounded appearance-none"
       >
         {options}
       </select>

@@ -18,10 +18,9 @@ const QRBodyPatternSelector = ({ pattern, setPattern }) => (
         <button
           key={p.value}
           type="button"
-          className={`border rounded p-2 ${pattern === p.value ? "border-blue-500 bg-blue-100 text-black" : "border-gray-300 bg-white text-black"}`}
+          className={`border rounded p-2 w-full sm:w-auto text-center ${pattern === p.value ? "border-blue-500 bg-blue-100 text-black" : "border-gray-300 bg-white text-black"}`}
           onClick={() => setPattern(p.value)}
         >
-          {/* Aquí podrías poner un SVG representativo de cada patrón */}
           <span>{p.label}</span>
         </button>
       ))}

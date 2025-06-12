@@ -3,7 +3,7 @@ import React from "react";
 
 const QRColorSelector = ({ color, setColor }) => (
   <div className="mt-4 flex items-center gap-2">
-    <label className="mr-2">Color del patrón:</label>
+    <label className="mr-2">Selecciona el Color para el Patrón:</label>
     <input
       type="color"
       value={color}

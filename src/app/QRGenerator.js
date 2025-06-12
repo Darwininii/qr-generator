@@ -13,7 +13,7 @@ import QREyeInnerPatternSelector from './QREyeInnerPatternSelector';
 
 const QRGenerator = () => {
   const qrRef = useRef(null);
-  const [url, setUrl] = useState('https://example.com');
+  const [url, setUrl] = useState('');
   const [logo, setLogo] = useState(null);
   const [size, setSize] = useState(300);
   const [pattern, setPattern] = useState('rounded');
@@ -130,7 +130,7 @@ const QRGenerator = () => {
       </div>
       <div className="flex flex-col items-center w-full max-w-md">
         {mounted && <QRPreview qrRef={qrRef} size={size} />}
-        <DownloadButton qrRef={qrRef} />
+        <DownloadButton qrRef={qrRef} url={url} />
       </div>
     </div>
   );
