@@ -41,4 +41,5 @@ const QREyeInnerPatternSelector = ({ innerEye, setInnerEye, innerEyeColor, setIn
   </div>
 );
 
+
 export default QREyeInnerPatternSelector;
